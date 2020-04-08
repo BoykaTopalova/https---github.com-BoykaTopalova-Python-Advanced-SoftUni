@@ -1,0 +1,5 @@
+list_numbers_names = input().split(" ")
+length = len(list_numbers_names)
+numbers = filter(lambda x: x.isdigit(), list_numbers_names)
+numbers = sorted([int(x)for x in numbers if int(x) > length])
+print(*numbers)

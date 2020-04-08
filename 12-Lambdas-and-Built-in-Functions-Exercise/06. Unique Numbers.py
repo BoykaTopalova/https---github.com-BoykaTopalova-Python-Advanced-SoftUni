@@ -1,0 +1,6 @@
+numbers = list(map(lambda x: round(float(x)), input().split(" ")))
+print(min(numbers))
+print(max(numbers))
+multiplication = map(lambda a: a * 3, numbers)
+sorted_list = sorted(set(multiplication))
+print(*sorted_list)

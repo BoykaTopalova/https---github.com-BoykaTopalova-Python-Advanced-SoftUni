@@ -1,0 +1,8 @@
+# list_names = input().split(" ")
+# true_names = filter(lambda name: name[0].isupper() and name[1:].islower(), list_names)
+# sum_lengths = sum(map(lambda x: len(x), true_names))
+# print(sum_lengths)
+list_names = input().split(" ")
+true_names = filter(lambda name: name.istitle(), list_names)
+sum_lengths = sum(map(lambda x: len(x), true_names))
+print(sum_lengths)
